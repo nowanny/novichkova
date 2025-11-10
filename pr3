@@ -1,0 +1,52 @@
+#задание1
+team = "Динамо"
+print(team, " - чемпион")
+
+print('-' * len(team))
+
+lower_team = name_team.lower()
+print(len(lower_team))
+
+print('п' in lower_team)
+print(lower_team.count('а'))
+
+#задание2
+country = "Италия"
+capital = "Рим"
+print("государство - ", country, ", столица - ", capital)
+
+#задание3
+word = "объектно-ориентированный"
+print(word[0:6])
+print(word[9:17])
+print(word[14:17])
+print(word[4] + word[7] + word[5])
+print(word[10] + word[12:15] + word[-5])
+
+#задание4
+st = "строка"
+subst = "подстрока"
+
+if subst.lower() in st.lower():
+    print("подстрока есть")
+else:
+    print("подстроки нет")
+
+#задание5
+string = "октмаопывп"
+letter = "п"
+first_index = string.find(letter)
+last_index = string.rfind(letter)
+if first_index == -1:
+    print("буквы нет в строке")
+else:
+    print(f"первое вхождение буквы '{letter}': {first_index}")
+    print(f"последнее вхождение буквы '{letter}': {last_index}")
+    
+#задание6
+from collections import Counter
+string = "введите текст: "
+str_without_spaces = text.replace(" ", "")
+count = Counter(str_without_spaces)
+most_common = counter.most_common(3)
+print(', '.join([f"{char} - {count}" for char, count in most_common]))
